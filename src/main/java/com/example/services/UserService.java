@@ -12,23 +12,34 @@ import com.example.models.BRUser;
 public class UserService 
 {
 	@Autowired
-	BRUserDao UserDao;
+	BRUserDao userDao;
 
 	public boolean existById(int userId) 
 	{
-		return UserDao.existsById(userId);
+		return userDao.existsById(userId);
 	}
 
 	public BRUser getUserById(int userId) 
 	{
-		return UserDao.getReferenceById(userId);
+		return userDao.getReferenceById(userId);
 	}
 
 	public List<BRUser> getAllUsers() 
 	{
-		List<BRUser> userList = UserDao.findAll();
+		List<BRUser> userList = userDao.findAll();
 		return userList;
 	}
 	
+	public BRUser saveUser(BRUser newUser)
+	{
+		if(newUser == null)
+		{
+			return null;
+		}else
+		{
+			return userDao.save(newUser);
+			
+		}
+	}
 	
 }
