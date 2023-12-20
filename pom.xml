@@ -9,12 +9,12 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>BugTracker</artifactId>
+	<artifactId>BugTracker3</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>BugTracker</name>
+	<name>BugTracker3</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
